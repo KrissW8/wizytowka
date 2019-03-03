@@ -1,0 +1,340 @@
+﻿.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
+}
+
+.border-right{
+    border: 100px black solid;
+    margin: 100px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+
+}
+.row {
+    margin: 0px;
+}
+.let-me-know{
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.about-me{
+    background: white;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 31px;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+}
+
+
+.content{
+    text-align: justify;
+    margin: 0 auto;
+    background: #F9F9F9;
+ 
+}
+
+.about-box {
+ 
+    background: white;
+}
+
+.btn-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.let-me-know button{
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 1;
+            flex: 1 1 1;
+    background: #2C88CB;
+    margin: 10px 20px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    font-weight: bold;
+ 
+    font-size: 18px;
+    text-align: center;
+    color: white;  
+}
+
+.let-me-know .check-but{
+    color: #2C88CB;
+    background: white;
+}
+
+.let-me-know .check-but a{
+        color: #2C88CB;
+}
+
+.let-me-know .check-but:hover {
+    color: #FDC32F;
+     width: 200px;
+     height: 50px;
+    border: 1px solid #FDC32F;
+}
+
+body {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+   
+}
+
+.header {
+    background: url("../../assets/header-photo.jpg") center / cover no-repeat;
+    
+}
+
+.head {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height:420px;
+    height: 70%;
+}
+.my-content {
+    border-right: 2px solid #2C88CB;
+}
+
+
+.left-header {
+    background: rgba(255, 255, 255, 0.75);
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.text-hi {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+
+/* Stylowanie tekstu w lewym nagłówku */
+.text-hi h1 {
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.text-hi h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.text-hi span {
+    color: #2C88CB;
+}
+
+.text-hi p {
+    line-height: 10px;
+}
+
+.right-header {
+    background: rgba(44, 136, 203, 0.97);
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+}
+
+.dog-img {
+    position: absolute;
+    z-index: 100;
+    background: #ffffff url("../../assets/dog-logo.jpg") center/ cover no-repeat;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 6% 48%;
+    -webkit-box-shadow: 5px 6px 4px  rgba(0, 0, 0, 0.20);
+            box-shadow: 5px 6px 4px  rgba(0, 0, 0, 0.20);
+}
+@media only screen and (max-width: 400px) {
+    .dog-img{
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 980px) {
+    .dog-img {
+        opacity: 0;
+    }
+}
+
+/* Nawigacja w górnym prawym rogu */
+.top-menu {
+    color: white;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+
+    height: 33%;
+
+}
+.details{
+    font-weight: bold;
+}
+.one-third {
+    padding: 30px 50px 10px;
+    font-size: 18px;
+    display: block;
+}
+
+.top-menu ul{
+    list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    font-weight: bold;
+    justify-self: space-between;
+}
+
+.top-menu ul li{
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 1;
+            flex: 1 1 1;
+    margin: 20px;
+}
+
+.hello-world {
+  
+    -webkit-box-flex: 1;
+  
+        -ms-flex: 1 1 auto;
+  
+            flex: 1 1 auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 100%;
+    height: 50%;
+    grid-gap: 10px;
+    font-weight: bold;
+    line-height: 66px;
+    font-size: 72px;
+    
+     
+      color: #3797DC;
+}
+
+.hello-world .box{
+    -webkit-box-flex: 3;
+        -ms-flex: 3 300px auto;
+            flex: 3 300px auto;
+    width: 100px;
+}
+
+.bot-menu {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-flex: 3;
+        -ms-flex: 3 200px auto;
+            flex: 3 200px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    color: white;
+    text-align: right;
+}
+h6{
+    margin: 20px 25px 0px 0px;
+}
+
+.bot-menu i{
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 24px;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    margin: 20px;
+    color: #2C88CB;
+}
+
+.bot-menu .xxx{
+    color: white;
+    background-color: #2C88CB;
+}
+
+
+
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+
+
+
+    background: -webkit-linear-gradient(top, white, black);
+
+
+
+    background: -o-linear-gradient(top, white, black);
+
+
+
+    background: linear-gradient(to bottom, white, black);
+}
