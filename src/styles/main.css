@@ -1,32 +1,253 @@
-@import "./variables.css";
+@import url("../../src/styles/variables.css");
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+.content{
+    background: #F9F9F9;
+    
+}
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.let-me-know{
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.about-box {
+    align-self: flex-end;
+}
+
+.about-box {
+    
+    background: red;
+   
+}
+
+
+.btn-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.let-me-know button{
+    flex: 1 1 1;
+    background: #2C88CB;
+    margin: 10px 20px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    font-weight: bold;
+ 
+    font-size: 18px;
+    text-align: center;
+    color: white;  
+}
+
+.let-me-know .check-but{
+    color: #2C88CB;
+    background: white;
+}
+
+.let-me-know .check-but a{
+        color: #2C88CB;
+}
+
+.let-me-know .check-but:hover {
+    color: #FDC32F;
+     width: 200px;
+     height: 50px;
+    border: 1px solid #FDC32F;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Domine', serif;
-    font-size: 20px
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+   
 }
 
-#main-container {
+.header {
+    background: url("../../assets/header-photo.jpg") center / cover no-repeat;
+    
+}
+
+.head {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height:420px;
+    height: 70%;
+}
+
+.left-header {
+    background: rgba(255, 255, 255, 0.75);
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.text-hi {
+    order: -1;
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+/* Stylowanie tekstu w lewym nagłówku */
+.text-hi h1 {
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.text-hi h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.text-hi span {
+    color: #2C88CB;
+}
+
+.text-hi p {
+    line-height: 10px;
+}
+
+.right-header {
+    background: rgba(44, 136, 203, 0.97);
+    margin: 0px;
     display: flex;
-    height: 100vh;
-    width: 100vh;
+    flex-direction: column;
 }
 
-.background-img {
-    background-image: url("../../assets/1.jpg");
+.dog-img {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    z-index: 100;
+    background: #ffffff url("../../assets/dog-logo.jpg") center/ cover no-repeat;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    z-index: -2;
+    margin: 10% 48%;
+    box-shadow: 5px 6px 4px  rgba(0, 0, 0, 0.20);
+}
+@media only screen and (max-width: 400px) {
+    .dog-img{
+        opacity: 0;
+    }
 }
 
-p {
-    text-align: justify;
+@media only screen and (min-width: 400px) and (max-width: 980px) {
+    .dog-img {
+        opacity: 0;
+    }
 }
+
+/* Nawigacja w górnym prawym rogu */
+.top-menu {
+    color: white;
+    flex: 1 1 1;
+}
+
+.top-menu ul{
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.top-menu ul li{
+    flex: 1 1 1;
+    margin: 20px;
+}
+
+.hello-world {
+     display: flex;
+     order: 3;
+     align-self: center;
+     width: 100%;
+     height: 50%;
+     grid-gap: 10px;
+     
+      font-weight: bold;
+
+    
+      line-height: 66px;
+      font-size: 72px;
+    
+     
+      color: #3797DC;
+}
+
+.hello-world .box{
+    flex: 1 1 1;
+    width: 100px;
+}
+
+.bot-menu {
+    height: 100%;
+    width: 100%;
+    color: black;
+    margin:0px;
+    padding:0px;
+    justify-content: flex-end;
+
+}
+
+.useful-links {
+    flex: 1 1 1;
+    display: inline-flex;
+    align-self: flex-end;
+    height: 100px;
+    color: white;
+    float: right;
+    margin: -10px 20px;
+}
+
+.bot-menu i{
+    border-radius: 50%;
+    border: 5px solid white;
+    flex: 1 1 1;
+    font-size: 24px;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    margin: 20px;
+    color: #2C88CB;
+}
+
+.bot-menu .xxx{
+    color: white;
+    background-color: #2C88CB;
+}
+
+
