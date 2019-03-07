@@ -16,7 +16,22 @@ body {
     background: #F9F9F9;
 }
 
+figure img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
 
+figure figcaption h1{
+    margin: 0px;
+    padding: 0px;
+}
+.image-class h2{
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+    
+}
 
 @media only screen and (max-width: 400px) {
     .dog-img {
