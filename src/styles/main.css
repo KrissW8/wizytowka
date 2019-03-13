@@ -6,6 +6,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
@@ -573,11 +574,12 @@ z-index: 5;
     flex-wrap: wrap;
     width: 100%;
     font-weight: bold;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 15px 10px 15px 0px;
 }
 
 .top-menu ul li{
+    margin: 15px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 1;
             flex: 1 1 1;
