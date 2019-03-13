@@ -16,7 +16,7 @@ body {
     background: #F9F9F9;
 }
 
-.about-details span {
+.about-details span, .text-hi span {
     color: #2C88CB;
 }
 
@@ -36,20 +36,17 @@ figure img{
 }
 .box:after {
     content: "";
-    /* Set the element as full-size */
     position: absolute;
     left: 0;
     top: 0;
     width: 400px;
     height: 300px;
-    /* Set bg and hide the element + animation */
     background-color: #000;
     opacity: 0;
     transition: all 0.2s ease 0s;
 }
 
 .box:hover:after {
-    /* Show the overlay on hover */
     opacity: 0.5;
 }
 .box a{
@@ -80,30 +77,24 @@ figure img{
 .descript:after {
     opacity: 1;
 }
-
 figure figcaption span{
     margin: 20px;
     padding: 0px;
 }
-
 .image-class {
     max-width: 400px;
     background: white;
     padding: 0px;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
-
 .image-class p{
     padding: 0px 20px 20px 20px;
 }
-
 .image-class h2{
     margin: 0px;
     padding: 0px;
     color: blue;
-    
 }
-
 .description-paragraph {
     font-family: Ubuntu;
     font-style: normal;
@@ -111,10 +102,8 @@ figure figcaption span{
     line-height: normal;
     font-size: 14px;
     letter-spacing: 0.02em;
-
     color: #A0A0A0;
 }
-
 .photo-link-address {
     font-family: Ubuntu;
     font-style: normal;
@@ -122,11 +111,8 @@ figure figcaption span{
     line-height: normal;
     font-size: 14px;
     letter-spacing: 0.02em;
-
     color: #2C88CB;
-
 }
-
 @media only screen and (max-width: 576px) {
     .dog-img {
         opacity: 0;
@@ -138,9 +124,7 @@ figure figcaption span{
     .header {
         height: 50%;
     }
-    
 }
-
 @media only screen and (min-width: 576px) and (max-width: 992px) {
     .dog-img {
         opacity: 0;
@@ -150,7 +134,6 @@ figure figcaption span{
         height: 0px;
     }
 }
-
 @media only screen and (min-width: 992px) {
 .hello-world {
     position: relative;
@@ -169,7 +152,6 @@ figure figcaption span{
     font-weight: bold;
     line-height: 80px;
 }
-/* Letters */
 .letter {
     position: absolute;
     z-index: 500000;
@@ -187,18 +169,11 @@ figure figcaption span{
     #l3 {left: 66%; top: 49%;}
     #d1 {left: 78%; top: 56%;}
 }
-
 .skills {
     text-align: right;
-    /* Right-align text */
     padding: 10px;
-    /* Add some padding */
     color: white;
-    /* White text color */
 }
-
-
-/* Skills Percentage */
 input[type=range] {
     -webkit-appearance: none;
     -moz-apperance: none;
@@ -209,9 +184,7 @@ input[type=range] {
 
 .skills-hard p,
 .skills-soft p {
-    
     margin: 0% 81% 0% 13%;
-
 }
 #input-html {
     background-image: -webkit-gradient(linear,
@@ -540,8 +513,6 @@ input[type=range]::-moz-range-thumb {
             box-shadow: 5px 6px 4px  rgba(0, 0, 0, 0.20);
 }
 
-
-/* Nawigacja w górnym prawym rogu */
 .top-menu {
     display: flex;
     color: white;
@@ -658,7 +629,6 @@ h6{
     color: white;
 }
 
-/* Kontakt */
 .contact {
     padding: 40px;
     background: white;
